@@ -1,0 +1,72 @@
+/* Static CSS file for password_generator app */
+body {
+    font-family: Arial, sans-serif;
+    background-color:     #0B020D; /* Dark background color */
+    color: #fff; /* Light text color */
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Barlow', sans-serif;
+    color: #F6E5FA; /* Accent color */
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #BF45DE; /* Darker form background color */
+    border-radius: 5px;
+}
+
+label {
+    font-family: 'Barlow', sans-serif;
+    display: block;
+    margin-bottom: 10px;
+    color: #F6E5FA; /* Label text color */
+}
+
+input[type="number"] {
+    font-family: 'Barlow', sans-serif;
+    width: 90%;
+    padding: 10px;
+    border-width: 0;
+    border: 0;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: #A322C3; /* Input background color */
+    color: #fff; /* Input text color */
+}
+
+input[type="submit"] {
+    font-family: 'Barlow', sans-serif;
+    background-color: #120416;
+    color: #F6E5FA;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer; /* Smooth transition for the button */
+    transition: all 1s ease;
+    transform: scale(1);
+}
+
+::placeholder{
+    color: #f6e5fa88;
+}
+
+input[type="submit"]:hover {
+    font-family: 'Barlow', sans-serif;
+    color: #F6E5FA;
+    box-shadow: 16 5px 50px #FFA1F5;
+    background-color: #B738AF;
+    transform: scale(1.1) perspective(1px)
+}
+
+
+p {
+    font-family: 'Barlow', sans-serif;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #F6E5FA; /* Paragraph text color */
+}
+

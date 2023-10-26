@@ -1,0 +1,409 @@
+/* Static CSS file for password_generator app */
+body {
+    font-family: Arial, sans-serif;
+    background-color:     #0B020D; /* Dark background color */
+    color: #fff; /* Light text color */
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Barlow', sans-serif;
+    color: #F6E5FA; /* Accent color */
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #BF45DE; /* Darker form background color */
+    border-radius: 5px;
+}
+
+label {
+    font-family: 'Barlow', sans-serif;
+    display: block;
+    margin-bottom: 10px;
+    color: #F6E5FA; /* Label text color */
+}
+
+input[type="text"] {
+    font-family: 'Barlow', sans-serif;
+    width: 90%;
+    padding: 10px;
+    border-width: 0;
+    border: 0;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: #A322C3; /* Input background color */
+    color: #fff; /* Input text color */
+}
+
+input[type="submit"] {
+    font-family: 'Barlow', sans-serif;
+    background-color: #120416;
+    color: #F6E5FA;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer; /* Smooth transition for the button */
+    transition: all 1s ease;
+    transform: scale(1);
+}
+
+.button{
+    font-family: 'Barlow', sans-serif;
+    background-color: #120416;
+    color: #F6E5FA;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer; /* Smooth transition for the button */
+    transition: all 1s ease;
+    transform: scale(1);
+}
+
+.button:hover{
+    font-family: 'Barlow', sans-serif;
+    color: #F6E5FA;
+    box-shadow: 0 5px 50px #120416;
+    background-color: #B738AF;
+    transform: scale(1.1) perspective(1px)
+}
+
+::placeholder{
+    color: #f6e5fa88;
+}
+
+.textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #BF45DE;
+    font-size: 16px;
+    resize: none;
+}
+
+input[type="submit"]:hover {
+    font-family: 'Barlow', sans-serif;
+    color: #F6E5FA;
+    box-shadow: 0 5px 50px #120416;
+    background-color: #B738AF;
+    transform: scale(1.1) perspective(1px)
+}
+
+
+p {
+    font-family: 'Barlow', sans-serif;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #F6E5FA; /* Paragraph text color */
+}
+
+.span {
+    font-family: 'Barlow', sans-serif;
+    color: #F6E5FA; /* Paragraph text color */
+    padding: 5px;
+}
+
+.a {
+    font-family: 'Barlow', sans-serif;
+    color: #f6e5fa94; /* Paragraph text color */
+}
+
+
+#copy-button{
+    font-family: 'Barlow', sans-serif;
+    background-color: #120416;
+    color: #F6E5FA;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer; /* Smooth transition for the button */
+    transition: all 1s ease;
+    transform: scale(1);
+}
+
+.button{
+    font-family: 'Barlow', sans-serif;
+    background-color: #120416;
+    color: #F6E5FA;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer; /* Smooth transition for the button */
+    transition: all 1s ease;
+    transform: scale(1);
+}
+
+.button:hover{
+    font-family: 'Barlow', sans-serif;
+    color: #F6E5FA;
+    box-shadow: 0 5px 50px #B738AF;
+    background-color: #B738AF;
+    transform: scale(1.1) perspective(1px)
+}
+
+.save{
+    font-family: 'Barlow', sans-serif;
+    background-color: #120416;
+    color: #F6E5FA;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer; /* Smooth transition for the button */
+    transition: all 1s ease;
+    transform: scale(1);
+}
+
+.save:hover{
+    font-family: 'Barlow', sans-serif;
+    color: #F6E5FA;
+    box-shadow: 0 5px 50px #B738AF;
+    background-color: #B738AF;
+    transform: scale(1.1) perspective(1px)
+}
+
+#copy-button:hover{
+    font-family: 'Barlow', sans-serif;
+    color: #F6E5FA;
+    box-shadow: 0 5px 50px #B738AF;
+    background-color: #B738AF;
+    transform: scale(1.1) perspective(1px)
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #333;
+    color: #fff;
+    background-color: #0B020D;
+}
+
+.logo {
+    cursor: pointer;
+    padding: 10px;
+    justify-content: right;
+    display: flex;
+}
+
+.login-logout {
+    display: flex;
+    flex-direction: row-reverse; /* Align the content to the right */
+}
+
+.login-logout a {
+    color: #fff;
+    margin-left: 10px; /* Add margin between login/logout links */
+}
+
+.wrapper{
+    display: flex;
+    height: 100vh;
+}
+
+.main{
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.inventory-button{
+    width: 70px;
+    height: 40px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    font-family: 'Barlow', sans-serif;
+    color: #F6E5FA;
+    background-color: #B738AF;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.inventory-button:hover{
+    background: #B738AF;
+    box-shadow: 0 5px 50px #B738AF;
+}
+
+.inventory{
+    display: initial;
+    width: 230px;
+    flex-shrink: 0;
+    padding: 20px;
+    color: #F6E5FA;
+    background-color: #BF45DE;
+    box-shadow: 0 0 10px rgba(191, 69, 222, 0.35);
+}
+
+.inventory-open .inventory{
+    display: none;
+}
+
+.border{
+    border-style: solid;
+    border-width: 2px;
+}
+
+.popup{
+    width: 400px;
+    background-color: #B738AF;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.01);
+    text-align: center;
+    padding: 10px;
+    font-family: 'Barlow', sans-serif;
+    color: #F6E5FA;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.fname{
+    font-family: 'Barlow', sans-serif;
+    background-color: #120416;
+    color: #F6E5FA;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer; /* Smooth transition for the button */
+    transition: all 1s ease;
+    transform: scale(1);
+}
+
+.confirm{
+    font-family: 'Barlow', sans-serif;
+    background-color: #120416;
+    color: #F6E5FA;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer; /* Smooth transition for the button */
+    transition: all 1s ease;
+    transform: scale(1);
+}
+
+.confirm:hover{
+    font-family: 'Barlow', sans-serif;
+    color: #F6E5FA;
+    box-shadow: 0 5px 50px #120416;
+    background-color: #B738AF;
+    transform: scale(1.1) perspective(1px)
+}
+
+table{
+    border-spacing: 1; 
+    border-collapse: collapse; 
+    background:white;
+    border-radius:6px;
+    overflow:hidden;
+    max-width:800px; 
+    width:100%;
+    margin:0 auto;
+    position:relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #120416;
+}
+
+td,tr,th{
+    font-family: 'Barlow', sans-serif;
+    color: #B738AF; /* Paragraph text color */
+    padding: 12px 15px;
+}
+
+.aa{
+    font-family: 'Barlow', sans-serif;
+    color: #B738AF; /* Paragraph text color */
+}
+
+.bodi{ 
+    padding:40px;
+}
+  
+.logo1 {
+    cursor: pointer;
+    padding: 10px;
+    justify-content: left;
+    display: flex;
+}
+
+/* CSS */
+.span1 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.span1:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-span1 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-span1 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.span1:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}

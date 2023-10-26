@@ -1,0 +1,98 @@
+<!-- password_generator/templates/password_generator/generate_password.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Dekripsi</title>
+    {% load static %} <!-- Add this line to load the static template tags -->
+    <link rel="stylesheet" href="{% static 'password_generator/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class='span'>Hello, {{ request.user }} </span>
+            <span class="span"> <a class="a" href="{% url 'logout' %}"> Logout</a></span>
+            <!--<span class="span"><a class="a" href="{% url 'viewpassword' %}">View Password</a></span>-->
+        </div>
+
+    </header>
+    <div class="wrapper inventory-open">
+        <div class="main">
+            <h1>Dekripsi</h1>
+            <form method="post">
+                {% csrf_token %}
+                <label for="length">Kata yang akan di dekripsi:</label>
+                <input type="text" id="ciphertext" name="length" placeholder="Kata yang akan di dekripsi">
+                <input type="submit" value="Generate">
+                <button class="button"><a class="a" href="{%url 'generate_password'%}">Encrypt</a></button>
+            </form>
+            {% if plain %}
+            <h2>Hasil dekripsi:</h2>
+            <p id="generated-password">{{ plain }}</p>
+            <button id="copy-button">Copy Ke Clipboard</button>
+            <!--<span class="span1"><a class="a" href="{% url 'create_pass' %}">Simpan Password</a></span>-->
+            {% endif %}
+        </div> 
+        
+        <!--<button class='inventory-button'id="inventory-button" onclick="toggleInventoryPanel()">Inventory</button>
+            <div class="inventory" id="inventory">
+                <table>
+                    <tr id="border">
+                        <th>Title</th>
+                        <th>Password</th>
+                        <th>Delete</th>
+                    </tr>
+                    {% for i in passname %}
+                    <tr>
+                        <td>{{i.title}}</td>
+                        <td>{{i.password}}</td>
+                        <td><a href="">Delete</a></td>
+                    </tr>
+                    {% endfor %}
+                    
+                </table>
+            </div>-->
+            
+            <!--<div class="popup" id="popup">
+                <form method="get">
+                    <label for="fname">Name:</label>
+                    <input type="text" id="fname" class="fname" name="fname"><br><br>
+                    <label for="fname">Password:</label>
+                    <input type="text" id="fname" class="fname" name="fname" value={{password}}><br><br>
+                    <button type="button" class="confirm" onclick="closePopup()">Confirm</button>
+                </form>
+            </div>-->
+        
+    </div>
+    
+        
+    <script> 
+        document.addEventListener('DOMContentLoaded', function() {
+            var copyButton = document.getElementById('copy-button');
+            var passwordElement = document.getElementById('generated-password');
+
+            copyButton.addEventListener('click', function() {
+                // Create a temporary input element
+                var tempInput = document.createElement('input');
+                tempInput.value = passwordElement.textContent;
+                document.body.appendChild(tempInput);
+
+                // Select the text in the temporary input
+                tempInput.select();
+                tempInput.setSelectionRange(0, 99999); // For mobile devices
+
+                // Copy the text to the clipboard
+                document.execCommand('copy');
+
+                // Remove the temporary input element
+                document.body.removeChild(tempInput);
+
+                // Provide feedback (you can use any method you like)
+                alert('Password copied to clipboard!');
+            });
+        });
+    </script>
+</html>
